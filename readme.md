@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/johnhenry-mcp-create-express-app-badge.png)](https://mseep.ai/app/johnhenry-mcp-create-express-app)
+
 # MCP Create Express App
 
 A utility module for creating Express applications with Model Context Protocol (MCP) support.
