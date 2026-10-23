@@ -1,11 +1,13 @@
 # MCP Create Express App
 
+> Previously published on npm as `mcp-create-express-app` (unscoped). That name is no longer updated; use `@johnhenry/mcp-create-express-app`.
+
 A utility module for creating Express applications with Model Context Protocol (MCP) support.
 
 ## Installation
 
 ```bash
-npm install mcp-create-express-app express
+npm install @johnhenry/mcp-create-express-app express
 ```
 
 ## Usage
@@ -14,7 +16,7 @@ npm install mcp-create-express-app express
 
 ```javascript
 import express from "express";
-import createExpressApp from "mcp-create-express-app";
+import createExpressApp from "@johnhenry/mcp-create-express-app";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 // Create an MCP server
@@ -41,7 +43,7 @@ app.listen(port, () => {
 
 ```javascript
 import express from "express";
-import { createStateful } from "mcp-client-router/create-express-app";
+import { createStateful } from "@johnhenry/mcp-create-express-app";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 // Create an Express app

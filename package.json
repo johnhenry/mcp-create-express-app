@@ -1,17 +1,16 @@
 {
-  "name": "mcp-create-express-app",
-  "version": "0.0.0",
+  "name": "@johnhenry/mcp-create-express-app",
+  "version": "0.1.0",
   "description": "Create Express applications with Model Context Protocol (MCP) support",
+  "type": "module",
   "main": "index.mjs",
   "types": "types.d.ts",
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/modelcontextprotocol/mcp-create-express-app"
-  },
-  "bugs": {
-    "url": "https://github.com/modelcontextprotocol/mcp-create-express-app/issues"
-  },
+  "files": [
+    "index.mjs",
+    "stateful.mjs",
+    "stateless.mjs",
+    "types.d.ts"
+  ],
   "keywords": [
     "mcp",
     "model-context-protocol",
@@ -19,13 +18,30 @@
     "http",
     "server"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "John Henry <john@iamjohnhenry.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
     "express": "^5.1.0"
   },
   "peerDependencies": {
     "express": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhenry/mcp-create-express-app.git"
+  },
+  "homepage": "https://github.com/johnhenry/mcp-create-express-app#readme",
+  "bugs": {
+    "url": "https://github.com/johnhenry/mcp-create-express-app/issues"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
   }
 }
